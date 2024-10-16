@@ -40,6 +40,24 @@
       >
         Point Counter Kamu : <span id="point">0</span>
       </h1>
+      <div
+        id="popup"
+        class="fixed w-2/5 flex items-center justify-center bg-black bg-opacity-50 invisible left-5 bottom-5 border border-black"
+      >
+        <div class="bg-[#BEF0CD] p-3 shadow-lg text-sm">
+          <p>
+            Point Counter Disebelah menggunakan local storage, artinya point
+            tersebut tidak akan hilang jika kamu me-refresh atau menutup web
+            ini.
+          </p>
+          <button
+            onclick="closePopup()"
+            class="bg-[#023BA7] text-white px-4 py-2 mt-4 border border-black hover:bg-[#A7A6FF]"
+          >
+            Tutup
+          </button>
+        </div>
+      </div>
     </main>
 
     <script src="script/script.js"></script>

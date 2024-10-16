@@ -31,3 +31,13 @@ reset.addEventListener("click", () => {
   increment.removeAttribute("disabled");
   decrement.removeAttribute("disabled");
 });
+
+function showPopup() {
+  document.getElementById("popup").classList.remove("invisible");
+}
+
+function closePopup() {
+  document.getElementById("popup").classList.add("hidden");
+}
+
+setTimeout(showPopup, 5000);
