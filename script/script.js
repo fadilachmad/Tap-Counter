@@ -3,6 +3,8 @@ const increment = document.getElementById("increment");
 const decrement = document.getElementById("decrement");
 const reset = document.getElementById("reset");
 const point = document.getElementById("point");
+const close = document.getElementById("close");
+const popup = document.getElementById("popup");
 
 let savedPoint = localStorage.getItem("point");
 point.innerText = savedPoint ? Number(savedPoint) : 0;
@@ -33,11 +35,10 @@ reset.addEventListener("click", () => {
 });
 
 function showPopup() {
-  document.getElementById("popup").classList.remove("invisible");
+  popup.classList.remove("invisible");
 }
-
-function closePopup() {
-  document.getElementById("popup").classList.add("hidden");
-}
-
 setTimeout(showPopup, 5000);
+
+close.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
