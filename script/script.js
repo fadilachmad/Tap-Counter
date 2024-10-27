@@ -22,7 +22,7 @@ increment.addEventListener("click", () => {
 decrement.addEventListener("click", () => {
   counter.innerText = Number(counter.innerText) - 1;
   if (counter.innerText == "-10") {
-    alert("You've reached the limit counter");
+    alert("Your point counter has been increased");
     increment.setAttribute("disabled", true);
     decrement.setAttribute("disabled", true);
   }
